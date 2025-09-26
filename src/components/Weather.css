@@ -1,0 +1,129 @@
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,#8f4c4c, #b71913);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50px;
+    background: #ebfffc;
+    cursor: pointer;
+}
+.weather-icon{
+    width: 150px;
+    margin: 30px 0 ;
+}
+.temperature{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color: #fff;
+    font-size: 20px;
+}
+.weather-data{
+    width: 100%;
+    margin: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px ;
+    font-size: 12px;
+}
+.weather-data .col .img{
+    width: 45px;
+   
+}
+.weather-data .col span{
+    display: block;
+    font-size: 16px;
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .weather {
+    width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .search-bar {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .search-bar input {
+    flex: 1;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .search-bar img {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+
+  .weather-icon {
+    width: 100px;
+    margin: 20px 0;
+  }
+
+  .temperature {
+    font-size: 48px;
+  }
+
+  .location {
+    font-size: 16px;
+  }
+
+  .weather-data {
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .weather-data .col {
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .weather-data .col .img {
+    width: 35px;
+  }
+
+  .weather-data .col span {
+    font-size: 14px;
+  }
+}
+
+
+
+
